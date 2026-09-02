@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>话剧字幕</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/subtitle.css">
+</head>
+<body>
+  <div class="orientation-hint">
+    <p>请将手机横屏使用</p>
+    <p style="font-size: 0.9rem; opacity: 0.7;">Rotate your device to landscape</p>
+  </div>
+
+  <div class="subtitle-page">
+    <header class="subtitle-header">
+      <span class="lang-label" id="lang-label"></span>
+      <button class="back-btn" id="back-btn" type="button"></button>
+    </header>
+
+    <main class="subtitle-main" id="subtitle-main">
+      <p class="countdown-hint" id="countdown-hint"></p>
+      <p class="countdown-display" id="countdown-display" hidden></p>
+      <p class="subtitle-text" id="subtitle-text"></p>
+    </main>
+
+    <footer class="subtitle-controls">
+      <span class="time-display" id="time-display">—</span>
+    </footer>
+  </div>
+
+  <button type="button" id="fullscreen-btn" class="fullscreen-btn" aria-label="Enter fullscreen">
+    <svg class="icon-enter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+    </svg>
+    <svg class="icon-exit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M4 14h3v3a2 2 0 0 0 2 2h3M20 10h-3V7a2 2 0 0 0-2-2h-3M10 20v-3H7a2 2 0 0 0-2-2v-3M14 4v3h3a2 2 0 0 0 2 2v3"/>
+    </svg>
+  </button>
+
+  <script src="js/fullscreen-toggle.js"></script>
+  <script src="js/subtitle-player.js"></script>
+</body>
+</html>

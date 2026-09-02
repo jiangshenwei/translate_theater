@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>话剧字幕 · 语言选择</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/language.css">
+</head>
+<body>
+  <div class="orientation-hint">
+    <p>请将手机横屏使用</p>
+    <p style="font-size: 0.9rem; opacity: 0.7;">Rotate your device to landscape</p>
+  </div>
+
+  <div class="language-page">
+    <div class="language-overlay"></div>
+    <div class="language-content">
+      <div class="language-brand">
+        <img class="language-logo" src="SHDR LOGO.png" alt="SHDR Logo">
+      </div>
+      <div class="language-panel">
+        <h1 class="language-title">Select Subtitle Language</h1>
+        <div class="language-buttons">
+          <a class="lang-btn" href="subtitle.html?lang=en">English</a>
+          <a class="lang-btn" href="subtitle.html?lang=ja">日本語</a>
+          <a class="lang-btn" href="subtitle.html?lang=ko">한국어</a>
+          <a class="lang-btn" href="subtitle.html?lang=th">ภาษาไทย</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="fullscreen-btn" class="fullscreen-btn" aria-label="Enter fullscreen">
+    <svg class="icon-enter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+    </svg>
+    <svg class="icon-exit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M4 14h3v3a2 2 0 0 0 2 2h3M20 10h-3V7a2 2 0 0 0-2-2h-3M10 20v-3H7a2 2 0 0 0-2-2v-3M14 4v3h3a2 2 0 0 0 2 2v3"/>
+    </svg>
+  </button>
+
+  <script src="js/fullscreen-toggle.js"></script>
+</body>
+</html>
